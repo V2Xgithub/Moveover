@@ -1,0 +1,28 @@
+<routes>           
+	<vType id="car" accel="2.6" decel="4.5" emergencyDecel="4.5" sigma="0" length="5" width="1.8" maxSpeed="13.89" minGap="2"/>
+        
+	<routeDistribution id="routedist0">
+        	<route id="route0" edges="etoj jtos"/>
+		<route id="route0" edges="etoj jtow"/>
+ 	</routeDistribution>
+
+	<routeDistribution id="routedist2">
+        	<route id="route0" edges="wtoj jtos"/>
+		<route id="route0" edges="wtoj jtoe"/>
+ 	</routeDistribution>
+
+	<routeDistribution id="routedist3">
+        	<route id="route0" edges="stoj jtoe"/>
+		<route id="route0" edges="stoj jtow"/>
+ 	</routeDistribution>
+
+	<flow id="flow0" color="yellow" begin="0" end="50000" period="exp(0.13)" type="car" route="routedist0" departSpeed="random">
+	</flow>
+
+	<flow id="flow2" color="red" begin="0" end="50000" period="exp(0.13)" type="car" route="routedist2" departSpeed="random">
+	</flow>
+
+	<flow id="flow3" color="green" begin="0" end="50000" period="exp(0.13)" type="car" route="routedist3" departSpeed="random">
+	</flow>
+
+</routes>

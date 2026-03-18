@@ -1,0 +1,40 @@
+<routes>           
+	<vType id="car" accel="2.6" decel="4.5" sigma="0" length="5" width="1.8" maxSpeed="13.89" minGap="2"/>
+        
+	<routeDistribution id="routedist0">
+		<route id="route0" edges="etoj 3 jton"/>
+        	<route id="route0" edges="etoj 3 4 1 jtos"/>
+		<route id="route0" edges="etoj 3 4 jtow"/>
+ 	</routeDistribution>
+
+	<routeDistribution id="routedist1">
+		<route id="route0" edges="ntoj 4 1 2 jtoe"/>
+        	<route id="route0" edges="ntoj 4 1 jtos"/>
+		<route id="route0" edges="ntoj 4 jtow"/>
+ 	</routeDistribution>
+
+	<routeDistribution id="routedist2">
+		<route id="route0" edges="wtoj 1 2 3 jton"/>
+        	<route id="route0" edges="wtoj 1 jtos"/>
+		<route id="route0" edges="wtoj 1 2 jtoe"/>
+ 	</routeDistribution>
+
+	<routeDistribution id="routedist3">
+		<route id="route0" edges="stoj 2 3 jton"/>
+        	<route id="route0" edges="stoj 2 jtoe"/>
+		<route id="route0" edges="stoj 2 3 4 jtow"/>
+ 	</routeDistribution>
+
+	<flow id="flow0" color="yellow" begin="0" end="50000" period="exp(0.1)" type="car" route="routedist0" departSpeed="random" impatience="0">
+	</flow>
+	
+	<flow id="flow1" color="blue" begin="0" end="50000" period="exp(0.1)" type="car" route="routedist1" departSpeed="random" impatience="0">
+	</flow>
+
+	<flow id="flow2" color="red" begin="0" end="50000" period="exp(0.1)" type="car" route="routedist2" departSpeed="random" impatience="0">
+	</flow>
+
+	<flow id="flow3" color="green" begin="0" end="50000" period="exp(0.1)" type="car" route="routedist3" departSpeed="random" impatience="0">
+	</flow>
+
+</routes> 

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2024-09-12 16:28:10 by Eclipse SUMO netedit Version 1.18.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/neteditConfiguration.xsd">
+
+    <input>
+        <sumo-net-file value="C:\Users\39342\Sumo\four_way\four_way.net.xml"/>
+    </input>
+
+    <output>
+        <output-file value="C:\Users\39342\Sumo\four_way\four_way.net.xml"/>
+    </output>
+
+    <processing>
+        <geometry.min-radius.fix.railways value="false"/>
+        <geometry.max-grade.fix value="false"/>
+        <offset.disable-normalization value="true"/>
+        <lefthand value="0"/>
+    </processing>
+
+    <junctions>
+        <no-turnarounds value="true"/>
+        <junctions.corner-detail value="5"/>
+        <junctions.limit-turn-speed value="5.50"/>
+        <rectangular-lane-cut value="0"/>
+    </junctions>
+
+    <pedestrian>
+        <walkingareas value="0"/>
+    </pedestrian>
+
+</configuration>
+-->
+
+<net version="1.16" junctionCornerDetail="5" limitTurnSpeed="5.50" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/net_file.xsd">
+
+    <location netOffset="0.00,0.00" convBoundary="-207.20,-207.20,207.20,207.20" origBoundary="-10000000000.00,-10000000000.00,10000000000.00,10000000000.00" projParameter="!"/>
+
+    <edge id=":junction_0" function="internal">
+        <lane id=":junction_0_0" index="0" speed="6.51" length="9.03" shape="-1.60,7.20 -1.95,4.75 -3.00,3.00 -4.75,1.95 -7.20,1.60"/>
+    </edge>
+    <edge id=":junction_1" function="internal">
+        <lane id=":junction_1_0" index="0" speed="13.89" length="14.40" shape="-1.60,7.20 -1.60,-7.20"/>
+    </edge>
+    <edge id=":junction_2" function="internal">
+        <lane id=":junction_2_0" index="0" speed="8.00" length="4.07" shape="-1.60,7.20 -1.05,3.35 -0.96,3.20"/>
+    </edge>
+    <edge id=":junction_12" function="internal">
+        <lane id=":junction_12_0" index="0" speed="8.00" length="10.13" shape="-0.96,3.20 0.60,0.60 3.35,-1.05 7.20,-1.60"/>
+    </edge>
+    <edge id=":junction_3" function="internal">
+        <lane id=":junction_3_0" index="0" speed="6.51" length="9.03" shape="7.20,1.60 4.75,1.95 3.00,3.00 1.95,4.75 1.60,7.20"/>
+    </edge>
+    <edge id=":junction_4" function="internal">
+        <lane id=":junction_4_0" index="0" speed="13.89" length="14.40" shape="7.20,1.60 -7.20,1.60"/>
+    </edge>
+    <edge id=":junction_5" function="internal">
+        <lane id=":junction_5_0" index="0" speed="8.00" length="14.19" shape="7.20,1.60 3.35,1.05 0.60,-0.60 -1.05,-3.35 -1.60,-7.20"/>
+    </edge>
+    <edge id=":junction_6" function="internal">
+        <lane id=":junction_6_0" index="0" speed="6.51" length="9.03" shape="1.60,-7.20 1.95,-4.75 3.00,-3.00 4.75,-1.95 7.20,-1.60"/>
+    </edge>
+    <edge id=":junction_7" function="internal">
+        <lane id=":junction_7_0" index="0" speed="13.89" length="14.40" shape="1.60,-7.20 1.60,7.20"/>
+    </edge>
+    <edge id=":junction_8" function="internal">
+        <lane id=":junction_8_0" index="0" speed="8.00" length="4.07" shape="1.60,-7.20 1.05,-3.35 0.96,-3.20"/>
+    </edge>
+    <edge id=":junction_13" function="internal">
+        <lane id=":junction_13_0" index="0" speed="8.00" length="10.13" shape="0.96,-3.20 -0.60,-0.60 -3.35,1.05 -7.20,1.60"/>
+    </edge>
+    <edge id=":junction_9" function="internal">
+        <lane id=":junction_9_0" index="0" speed="6.51" length="9.03" shape="-7.20,-1.60 -4.75,-1.95 -3.00,-3.00 -1.95,-4.75 -1.60,-7.20"/>
+    </edge>
+    <edge id=":junction_10" function="internal">
+        <lane id=":junction_10_0" index="0" speed="13.89" length="14.40" shape="-7.20,-1.60 7.20,-1.60"/>
+    </edge>
+    <edge id=":junction_11" function="internal">
+        <lane id=":junction_11_0" index="0" speed="8.00" length="14.19" shape="-7.20,-1.60 -3.35,-1.05 -0.60,0.60 1.05,3.35 1.60,7.20"/>
+    </edge>
+
+    <edge id="etoj" from="east" to="junction" priority="-1">
+        <lane id="etoj_0" index="0" speed="13.89" length="200.00" shape="207.20,1.60 7.20,1.60"/>
+    </edge>
+    <edge id="jtoe" from="junction" to="east" priority="-1">
+        <lane id="jtoe_0" index="0" speed="13.89" length="200.00" shape="7.20,-1.60 207.20,-1.60"/>
+    </edge>
+    <edge id="jton" from="junction" to="north" priority="-1">
+        <lane id="jton_0" index="0" speed="13.89" length="200.00" shape="1.60,7.20 1.60,207.20"/>
+    </edge>
+    <edge id="jtos" from="junction" to="south" priority="-1">
+        <lane id="jtos_0" index="0" speed="13.89" length="200.00" shape="-1.60,-7.20 -1.60,-207.20"/>
+    </edge>
+    <edge id="jtow" from="junction" to="west" priority="-1" length="192.80">
+        <lane id="jtow_0" index="0" speed="13.89" length="192.80" shape="-7.20,1.60 -207.20,1.60"/>
+    </edge>
+    <edge id="ntoj" from="north" to="junction" priority="-1">
+        <lane id="ntoj_0" index="0" speed="13.89" length="200.00" shape="-1.60,207.20 -1.60,7.20"/>
+    </edge>
+    <edge id="stoj" from="south" to="junction" priority="-1">
+        <lane id="stoj_0" index="0" speed="13.89" length="200.00" shape="1.60,-207.20 1.60,-7.20"/>
+    </edge>
+    <edge id="wtoj" from="west" to="junction" priority="-1">
+        <lane id="wtoj_0" index="0" speed="13.89" length="200.00" shape="-207.20,-1.60 -7.20,-1.60"/>
+    </edge>
+
+    <junction id="east" type="dead_end" x="207.20" y="0.00" incLanes="jtoe_0" intLanes="" shape="207.20,0.00 207.20,-3.20 207.20,0.00"/>
+    <junction id="junction" type="priority" x="0.00" y="0.00" incLanes="ntoj_0 etoj_0 stoj_0 wtoj_0" intLanes=":junction_0_0 :junction_1_0 :junction_12_0 :junction_3_0 :junction_4_0 :junction_5_0 :junction_6_0 :junction_7_0 :junction_13_0 :junction_9_0 :junction_10_0 :junction_11_0" shape="-3.20,7.20 3.20,7.20 3.64,4.98 4.20,4.20 4.98,3.64 5.98,3.31 7.20,3.20 7.20,-3.20 4.98,-3.64 4.20,-4.20 3.64,-4.98 3.31,-5.98 3.20,-7.20 -3.20,-7.20 -3.64,-4.98 -4.20,-4.20 -4.98,-3.64 -5.98,-3.31 -7.20,-3.20 -7.20,3.20 -4.98,3.64 -4.20,4.20 -3.64,4.98 -3.31,5.98" rightOfWay="allwayStop">
+        <request index="0"  response="000000000000" foes="000100010000" cont="0"/>
+        <request index="1"  response="000000000000" foes="111100110000" cont="0"/>
+        <request index="2"  response="000111000000" foes="110111110000" cont="1"/>
+        <request index="3"  response="000010000000" foes="100010000000" cont="0"/>
+        <request index="4"  response="000110000111" foes="100110000111" cont="0"/>
+        <request index="5"  response="111110000110" foes="111110000110" cont="0"/>
+        <request index="6"  response="000000000000" foes="010000000100" cont="0"/>
+        <request index="7"  response="000000000000" foes="110000111100" cont="0"/>
+        <request index="8"  response="000000000011" foes="110000110111" cont="1"/>
+        <request index="9"  response="000000000010" foes="000000100010" cont="0"/>
+        <request index="10" response="000111000110" foes="000111100110" cont="0"/>
+        <request index="11" response="000110011110" foes="000110111110" cont="0"/>
+    </junction>
+    <junction id="north" type="dead_end" x="0.00" y="207.20" incLanes="jton_0" intLanes="" shape="0.00,207.20 3.20,207.20 0.00,207.20"/>
+    <junction id="south" type="dead_end" x="0.00" y="-207.20" incLanes="jtos_0" intLanes="" shape="0.00,-207.20 -3.20,-207.20 0.00,-207.20"/>
+    <junction id="west" type="dead_end" x="-207.20" y="0.00" incLanes="jtow_0" intLanes="" shape="-207.20,0.00 -207.20,3.20 -207.20,0.00"/>
+
+    <junction id=":junction_12_0" type="internal" x="-0.96" y="3.20" incLanes=":junction_2_0 stoj_0" intLanes=":junction_4_0 :junction_5_0 :junction_6_0 :junction_7_0 :junction_10_0 :junction_11_0"/>
+    <junction id=":junction_13_0" type="internal" x="0.96" y="-3.20" incLanes=":junction_8_0 ntoj_0" intLanes=":junction_0_0 :junction_1_0 :junction_4_0 :junction_5_0 :junction_10_0 :junction_11_0"/>
+
+    <connection from="etoj" to="jton" fromLane="0" toLane="0" via=":junction_3_0" dir="r" state="m"/>
+    <connection from="etoj" to="jtow" fromLane="0" toLane="0" via=":junction_4_0" dir="s" state="m"/>
+    <connection from="etoj" to="jtos" fromLane="0" toLane="0" via=":junction_5_0" dir="l" state="m"/>
+    <connection from="ntoj" to="jtow" fromLane="0" toLane="0" via=":junction_0_0" dir="r" state="M"/>
+    <connection from="ntoj" to="jtos" fromLane="0" toLane="0" via=":junction_1_0" dir="s" state="M"/>
+    <connection from="ntoj" to="jtoe" fromLane="0" toLane="0" via=":junction_2_0" dir="l" state="m"/>
+    <connection from="stoj" to="jtoe" fromLane="0" toLane="0" via=":junction_6_0" dir="r" state="M"/>
+    <connection from="stoj" to="jton" fromLane="0" toLane="0" via=":junction_7_0" dir="s" state="M"/>
+    <connection from="stoj" to="jtow" fromLane="0" toLane="0" via=":junction_8_0" dir="l" state="m"/>
+    <connection from="wtoj" to="jtos" fromLane="0" toLane="0" via=":junction_9_0" dir="r" state="m"/>
+    <connection from="wtoj" to="jtoe" fromLane="0" toLane="0" via=":junction_10_0" dir="s" state="m"/>
+    <connection from="wtoj" to="jton" fromLane="0" toLane="0" via=":junction_11_0" dir="l" state="m"/>
+
+    <connection from=":junction_0" to="jtow" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":junction_1" to="jtos" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":junction_2" to="jtoe" fromLane="0" toLane="0" via=":junction_12_0" dir="l" state="m"/>
+    <connection from=":junction_12" to="jtoe" fromLane="0" toLane="0" dir="l" state="M"/>
+    <connection from=":junction_3" to="jton" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":junction_4" to="jtow" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":junction_5" to="jtos" fromLane="0" toLane="0" dir="l" state="M"/>
+    <connection from=":junction_6" to="jtoe" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":junction_7" to="jton" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":junction_8" to="jtow" fromLane="0" toLane="0" via=":junction_13_0" dir="l" state="m"/>
+    <connection from=":junction_13" to="jtow" fromLane="0" toLane="0" dir="l" state="M"/>
+    <connection from=":junction_9" to="jtos" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":junction_10" to="jtoe" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":junction_11" to="jton" fromLane="0" toLane="0" dir="l" state="M"/>
+
+</net>
